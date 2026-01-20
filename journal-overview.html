@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Journal Overview | KJMR</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img class="brand__logo" src="Journal Logo_BG.png" alt="Journal Logo" />
+        <div class="brand__text">
+          <div class="brand__name">KLEF Journal of Multidisciplinary Research</div>
+          <div class="brand__tag">Connecting Disciplines • Enabling Discovery • Advancing Impact</div>
+        </div>
+      </a>
+
+      <nav class="topnav" aria-label="Main navigation">
+        <a class="topnav__link" href="index.html">Home</a>
+        <a class="topnav__link" href="about.html">About</a>
+        <a class="topnav__link" href="volumes.html">Volumes</a>
+        <a class="topnav__link" href="submit.html">Submit</a>
+        <a class="topnav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <button class="iconbtn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+    </header>
+
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__header">
+        <div class="drawer__title">Menu</div>
+        <button class="iconbtn" id="closeDrawerBtn" aria-label="Close menu">✕</button>
+      </div>
+      <div class="drawer__body">
+        <a class="drawer__link" href="index.html">Home</a>
+        <a class="drawer__link" href="about.html">About</a>
+        <a class="drawer__link" href="volumes.html">Volumes</a>
+        <a class="drawer__link" href="submit.html">Submit</a>
+        <a class="drawer__link" href="contact.html">Contact</a>
+
+        <div class="drawer__divider"></div>
+
+        <div class="drawer__subtitle">Journal Navigation</div>
+        <a class="drawer__link" href="journal-overview.html">Journal Overview</a>
+        <a class="drawer__link" href="indexing.html">Indexing & Abstracting</a>
+        <a class="drawer__link" href="editorial-board.html">Editorial Board</a>
+        <a class="drawer__link" href="authors.html">Instructions for Authors</a>
+        <a class="drawer__link" href="apc.html">Article Processing Charge</a>
+        <a class="drawer__link" href="ethics.html">Publication Ethics</a>
+        <a class="drawer__link" href="contact.html">Contact Information</a>
+        <a class="drawer__link" href="special-issues.html">Open Special Issues</a>
+        <a class="drawer__link" href="privacy.html">Privacy Policy</a>
+        <a class="drawer__link" href="terms.html">Terms and Conditions</a>
+        <a class="drawer__link" href="refunds.html">Cancellations & Refunds</a>
+      </div>
+    </div>
+
+    <div class="backdrop" id="backdrop" hidden></div>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Journal Navigation">
+        <div class="sidebar__title">Journal Navigation</div>
+        <nav class="sidenav">
+          <a class="sidenav__link" href="journal-overview.html">Journal Overview</a>
+          <a class="sidenav__link" href="indexing.html">Indexing & Abstracting</a>
+          <a class="sidenav__link" href="editorial-board.html">Editorial Board</a>
+          <a class="sidenav__link" href="authors.html">Instructions for Authors</a>
+          <a class="sidenav__link" href="apc.html">Article Processing Charge</a>
+          <a class="sidenav__link" href="ethics.html">Publication Ethics</a>
+          <a class="sidenav__link" href="contact.html">Contact Information</a>
+          <a class="sidenav__link" href="special-issues.html">Open Special Issues</a>
+          <a class="sidenav__link" href="privacy.html">Privacy Policy</a>
+          <a class="sidenav__link" href="terms.html">Terms and Conditions</a>
+          <a class="sidenav__link" href="refunds.html">Cancellations & Refunds</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="section">
+          <h1 class="section__title">Journal Overview</h1>
+          <p class="section__subtitle">
+            KLEF Journal of Multidisciplinary Research (KJMR) publishes peer-reviewed, Open Access scholarly works that
+            contribute to multidisciplinary knowledge and foster cross-disciplinary collaboration. The journal supports
+            research that is methodologically sound, ethically compliant, and written with clarity and strong scholarly value.
+            <br /><br />
+            KJMR welcomes original research articles, review articles, short communications, and interdisciplinary studies.
+            Articles are selected through double-blind peer review and editorial quality checks to ensure relevance,
+            rigor, and contribution to the academic community.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section__title">Publishing Model</h2>
+          <p class="section__subtitle">
+            KJMR operates as an Open Access journal. All published articles are freely available to readers without subscription.
+            The journal follows a double-blind peer review policy and publishes two issues per year.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section__title">Who Can Submit?</h2>
+          <p class="section__subtitle">
+            Researchers, academicians, industry professionals, and practitioners are welcome to submit manuscripts. Submissions
+            should be original, unpublished, and not under review elsewhere.
+          </p>
+        </section>
+
+        <div class="footer-wrap">
+          <footer class="footer">
+            <div class="footer__row">
+              <div>© <span id="year"></span> KLEF Journal of Multidisciplinary Research (KJMR). All rights reserved.</div>
+              <div class="footer__right">Published by <strong>Koneru Lakshmaiah Education Foundation (KLEF)</strong></div>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
