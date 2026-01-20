@@ -1,83 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact | KJMR</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | KJMR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body data-active="contact">
-    <div id="siteHeader"></div>
-    <div id="siteDrawer"></div>
-    <div id="siteBackdrop"></div>
+<body data-active="contact">
+  <div id="siteHeader"></div>
+  <div id="siteDrawer"></div>
+  <div id="siteBackdrop"></div>
 
-    <div class="layout">
-      <div id="siteSidebar"></div>
+  <div class="layout">
+    <div id="siteSidebar"></div>
 
-      <main class="content">
-        <section class="hero">
-          <div class="hero__meta">
-            <h1 class="hero__title">Contact Information</h1>
-            <div class="hero__sub">
-              <span class="badge">KJMR</span>
-              <span id="issnText">ISSN: (To be assigned)</span>
-            </div>
+    <main class="content">
+      <section class="section">
+        <h1 class="section__title">Contact Us</h1>
+        <p class="p">
+          Have questions or need assistance? Feel free to reach out to us using the form below.
+        </p>
 
-            <p class="hero__desc">
-              For general queries, submissions, editorial communication, and policy clarifications, please use the
-              official journal email IDs. We aim to respond promptly and support authors, reviewers, and readers
-              with accurate and transparent communication.
-            </p>
+        <h2 class="h2">Send Message</h2>
 
-            <div class="hero__cta">
-              <a class="btn btn--primary" href="mailto:info.kjmr@kluniversity.in">Email General Office</a>
-              <a class="btn btn--ghost" href="mailto:edboard.kjmr@kluniversity.in">Email Editorial Board</a>
-            </div>
-          </div>
-
-          <div class="hero__card">
-            <div class="card">
-              <div class="card__title">Journal Contacts</div>
-              <div class="card__body">
-                <div class="kv">
-                  <div class="kv__k">General Information</div>
-                  <div class="kv__v">info.kjmr@kluniversity.in</div>
-                </div>
-                <div class="kv">
-                  <div class="kv__k">Editorial Board</div>
-                  <div class="kv__v">edboard.kjmr@kluniversity.in</div>
-                </div>
-
-                <div class="sep"></div>
-
-                <div class="kv">
-                  <div class="kv__k">Website</div>
-                  <div class="kv__v">www.kjmr.kluniversity.in</div>
-                </div>
-                <div class="kv">
-                  <div class="kv__k">Publisher</div>
-                  <div class="kv__v">Koneru Lakshmaiah Education Foundation (KLEF)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2 class="section__title">Postal Address</h2>
-          <p class="section__subtitle">
-            KLEF Journal of Multidisciplinary Research (KJMR)<br />
-            Koneru Lakshmaiah Education Foundation (KLEF), KL University<br />
-            Guntur, Andhra Pradesh, India
-          </p>
-        </section>
-
-        <div id="siteFooter"></div>
-      </main>
+        <form class="form" id="contactForm">
+  <div class="form-grid">
+    <div class="form-field">
+      <label class="label">Name <span class="req">*</span></label>
+      <input class="input" id="name" type="text" required />
     </div>
 
-    <script src="layout.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="form-field">
+      <label class="label">Email <span class="req">*</span></label>
+      <input class="input" id="email" type="email" required />
+    </div>
+
+    <div class="form-field full">
+      <label class="label">Subject <span class="req">*</span></label>
+      <input class="input" id="subject" type="text" required />
+    </div>
+
+    <div class="form-field full">
+      <label class="label">Message <span class="req">*</span></label>
+      <textarea class="textarea" id="message" rows="6" required></textarea>
+    </div>
+
+    <div class="form-field full">
+      <button class="btn btn--primary" type="submit">Send Message</button>
+    </div>
+  </div>
+</form>
+
+
+        <h2 class="h2" style="margin-top:22px;">Contact Details</h2>
+
+        <h3 class="h3">Email:</h3>
+        <p class="p">
+          info.kjmr@kluniversity.in<br />
+          edboard.kjmr@kluniversity.in
+        </p>
+
+        <h3 class="h3">Address:</h3>
+        <p class="p">
+          The Chief Editorial Board,<br />
+          Journal Name: KLEF Journal of Multidisciplinary Research (KJMR),<br />
+          Koneru Lakshmaiah Education Foundation (KLEF),<br />
+          Guntur, Andhra Pradesh, India – 522501.
+        </p>
+
+        <h3 class="h3">Business Hours</h3>
+        <p class="p">
+          Monday - Friday: 9:00 AM - 6:00 PM IST<br />
+          Saturday: 10:00 AM - 2:00 PM IST<br />
+          Sunday: Closed
+        </p>
+      </section>
+
+      <div id="siteFooter"></div>
+    </main>
+  </div>
+
+  <script src="layout.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // Static-site friendly: open user's email client with prefilled content
+    (function () {
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = encodeURIComponent(document.getElementById("name").value.trim());
+        const email = encodeURIComponent(document.getElementById("email").value.trim());
+        const subject = encodeURIComponent(document.getElementById("subject").value.trim());
+        const message = encodeURIComponent(document.getElementById("message").value.trim());
+
+        const to = "info.kjmr@kluniversity.in";
+        const body =
+          "Name: " + name + "%0D%0A" +
+          "Email: " + email + "%0D%0A%0D%0A" +
+          "Message:%0D%0A" + message;
+
+        window.location.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
+      });
+    })();
+  </script>
+</body>
 </html>

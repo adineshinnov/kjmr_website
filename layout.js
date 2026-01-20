@@ -51,12 +51,12 @@
     <a class="drawer__link" href="journal-overview.html">Journal Overview</a>
     <a class="drawer__link" href="indexing.html">Indexing & Abstracting</a>
     <a class="drawer__link" href="editorial-board.html">Editorial Board</a>
-    <a class="drawer__link" href="authors.html">Instructions for Authors</a>
+    <a class="drawer__link" href="instructions.html">Instructions for Authors</a>
     <a class="drawer__link" href="apc.html">Article Processing Charge</a>
     <a class="drawer__link" href="ethics.html">Publication Ethics</a>
     <a class="drawer__link" href="contact.html">Contact Information</a>
     <a class="drawer__link" href="special-issues.html">Open Special Issues</a>
-    <a class="drawer__link" href="privacy.html">Privacy Policy</a>
+    <a class="drawer__link" href="privacy-policy.html">Privacy Policy</a>
     <a class="drawer__link" href="terms.html">Terms and Conditions</a>
     <a class="drawer__link" href="refunds.html">Cancellations & Refunds</a>
   </div>
@@ -72,12 +72,12 @@
     <a class="sidenav__link" href="journal-overview.html">Journal Overview</a>
     <a class="sidenav__link" href="indexing.html">Indexing & Abstracting</a>
     <a class="sidenav__link" href="editorial-board.html">Editorial Board</a>
-    <a class="sidenav__link" href="authors.html">Instructions for Authors</a>
+    <a class="sidenav__link" href="instructions.html">Instructions for Authors</a>
     <a class="sidenav__link" href="apc.html">Article Processing Charge</a>
     <a class="sidenav__link" href="ethics.html">Publication Ethics</a>
     <a class="sidenav__link" href="contact.html">Contact Information</a>
     <a class="sidenav__link" href="special-issues.html">Open Special Issues</a>
-    <a class="sidenav__link" href="privacy.html">Privacy Policy</a>
+    <a class="sidenav__link" href="privacy-policy.html">Privacy Policy</a>
     <a class="sidenav__link" href="terms.html">Terms and Conditions</a>
     <a class="sidenav__link" href="refunds.html">Cancellations & Refunds</a>
   </nav>
@@ -89,9 +89,7 @@
   <footer class="footer">
     <div class="footer__row">
       <div>
-        © <span id="year"></span>
-        <span id="footerJournal">KLEF Journal of Multidisciplinary Research (KJMR)</span>.
-        All rights reserved.
+        © <span id="year"></span> <span id="footerJournal">KLEF Journal of Multidisciplinary Research (KJMR)</span>. All rights reserved.
       </div>
       <div class="footer__right">
         Published by <strong>Koneru Lakshmaiah Education Foundation (KLEF)</strong>
@@ -107,7 +105,6 @@
 
     const tpl = document.createElement("template");
     tpl.innerHTML = html.trim();
-
     const node = tpl.content.firstElementChild;
     if (!node) return;
 
