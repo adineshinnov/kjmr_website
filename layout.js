@@ -12,7 +12,7 @@
   const headerHTML = `
 <header class="topbar">
   <a class="brand" href="index.html" aria-label="Home">
-    <img class="brand__logo" src="Journal Logo_BG.png" alt="Journal Logo" />
+    <img class="brand__logo" src="KJMR+KL Logo Cropped.png" alt="Journal Logo" style="width: 200px; height: auto;"/>
     <div class="brand__text">
       <div class="brand__name" id="journalName">KLEF Journal of Multidisciplinary Research</div>
       <div class="brand__tag" id="journalTag">Connecting Disciplines • Enabling Discovery • Advancing Impact</div>
