@@ -73,21 +73,29 @@ body {
   color: #fff;
 }
 
-.brand__logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+.brand__logo{
+  width: 150px;          /* rectangular logo width */
+  height: 54px;          /* rectangular logo height */
+  border-radius: 10px;   /* soft rectangle corners */
+  object-fit: contain;   /* do not crop the logo */
+  padding: 6px 10px;     /* inner spacing */
+
+  background: #ffffff;   /* ✅ solid white background */
+  border: 1px solid rgba(0,0,0,0.10);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.22);
 }
 
-.brand__name {
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: 0.2px;
+
+.brand__name{
+  font-family: "Merriweather", Georgia, "Times New Roman", serif; /* ✅ different professional font */
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  text-transform: none; /* keep natural case */
 }
+
 
 .brand__tag {
   font-size: 13px;
@@ -220,12 +228,12 @@ body {
 }
 
 /* Title like FEI */
-.hero__title {
-  margin: 0;
-  font-size: 34px;
+.hero__title{
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
   font-weight: 900;
-  color: #0b2f6b;
+  letter-spacing: 0.2px;
 }
+
 
 /* Sub line */
 .hero__sub {
